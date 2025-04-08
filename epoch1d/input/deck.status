@@ -1,0 +1,151 @@
+ EPOCH1D v4.19.5   v4.19.5-7-g19b153ff-clean 1744104200.557            
+
+Deck state:  1
+
+ Beginning "control" block
+
+ 	Element nx=400 handled OK
+ 	Element nparticles=20000 handled OK
+ 	Element t_end=1.5e-1 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=5.0e5 handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=periodic handled OK
+ 	Element bc_x_max=periodic handled OK
+
+ Ending "boundaries" block
+
+ Beginning "constant" block
+
+ 	Element drift_p=2.5e-24 handled OK
+ 	Element temp=273 handled OK
+ 	Element dens=10 handled OK
+
+ Ending "constant" block
+
+ Beginning "species" block
+
+ 	Element name=Right handled OK
+ 	Element charge=-1 handled OK
+ 	Element mass=1.0 handled OK
+ 	Element fraction=0.5 handled OK
+ 	Element temperature_x=temp handled OK
+ 	Element drift_px=drift_p handled OK
+ 	Element number_density=dens handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Left handled OK
+ 	Element charge=-1 handled OK
+ 	Element mass=1.0 handled OK
+ 	Element fraction=0.5 handled OK
+ 	Element temperature_x=temp handled OK
+ 	Element drift_px=-drift_p handled OK
+ 	Element number_density=dens handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=1.5e-3 handled OK
+ 	Element full_dump_every=1 handled OK
+ 	Element particles=always handled OK
+ 	Element px=always handled OK
+ 	Element grid=always handled OK
+ 	Element ex=always handled OK
+ 	Element ey=always handled OK
+ 	Element ez=always handled OK
+ 	Element bx=always handled OK
+ 	Element by=always handled OK
+ 	Element bz=always handled OK
+ 	Element jx=always handled OK
+ 	Element average_particle_energy=always handled OK
+ 	Element mass_density=never + species handled OK
+ 	Element charge_density=always handled OK
+ 	Element number_density=always + species handled OK
+ 	Element temperature=always + species handled OK
+ 	Element distribution_functions=always handled OK
+
+ Ending "output" block
+
+Deck state:  2
+
+ Beginning "control" block
+
+ 	Element nx=400 handled OK
+ 	Element nparticles=20000 handled OK
+ 	Element t_end=1.5e-1 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=5.0e5 handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=periodic handled OK
+ 	Element bc_x_max=periodic handled OK
+
+ Ending "boundaries" block
+
+ Beginning "constant" block
+
+ 	Element drift_p=2.5e-24 handled OK
+ 	Element temp=273 handled OK
+ 	Element dens=10 handled OK
+
+ Ending "constant" block
+
+ Beginning "species" block
+
+ 	Element name=Right handled OK
+ 	Element charge=-1 handled OK
+ 	Element mass=1.0 handled OK
+ 	Element fraction=0.5 handled OK
+ 	Element temperature_x=temp handled OK
+ 	Element drift_px=drift_p handled OK
+ 	Element number_density=dens handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Left handled OK
+ 	Element charge=-1 handled OK
+ 	Element mass=1.0 handled OK
+ 	Element fraction=0.5 handled OK
+ 	Element temperature_x=temp handled OK
+ 	Element drift_px=-drift_p handled OK
+ 	Element number_density=dens handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=1.5e-3 handled OK
+ 	Element full_dump_every=1 handled OK
+ 	Element particles=always handled OK
+ 	Element px=always handled OK
+ 	Element grid=always handled OK
+ 	Element ex=always handled OK
+ 	Element ey=always handled OK
+ 	Element ez=always handled OK
+ 	Element bx=always handled OK
+ 	Element by=always handled OK
+ 	Element bz=always handled OK
+ 	Element jx=always handled OK
+ 	Element average_particle_energy=always handled OK
+ 	Element mass_density=never + species handled OK
+ 	Element charge_density=always handled OK
+ 	Element number_density=always + species handled OK
+ 	Element temperature=always + species handled OK
+ 	Element distribution_functions=always handled OK
+
+ Ending "output" block
+
+ Initial conditions complete and valid.
