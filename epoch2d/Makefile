@@ -176,7 +176,8 @@ LDFLAGS = $(FFLAGS) -L$(SDF)/lib -lsdf
 TARGET = epoch2d
 
 # Set pre-processor defines
-DEFINES := $(DEFINE)
+# DEFINES := $(DEFINE)
+DEFINES := $(DEFINE) -DPHOTONS -DBREMSSTRAHLUNG
 
 # The following are a list of pre-processor defines which can be added to
 # the above line modifying the code behaviour at compile time.
