@@ -1,0 +1,25 @@
+ EPOCH2D v4.19.5   v4.19.5-6-g3abea98a-dirty 1743664913.623            
+
+ Loaded 104857 particles of species "Electron_Beam"
+ Loaded 26212 particles of species "Aluminium"
+Wrote full   ,           0000.sdf at time  0.1667E-14 and iteration       0
+Wrote normal ,           0001.sdf at time  0.1000E-11 and iteration     300
+Wrote normal ,           0002.sdf at time  0.2001E-11 and iteration     600
+Wrote normal ,           0003.sdf at time  0.3001E-11 and iteration     900
+Wrote normal ,           0004.sdf at time  0.4001E-11 and iteration    1200
+Wrote normal ,           0005.sdf at time  0.5001E-11 and iteration    1500
+Wrote normal ,           0006.sdf at time  0.6002E-11 and iteration    1800
+Wrote normal ,           0007.sdf at time  0.7002E-11 and iteration    2100
+Wrote normal ,           0008.sdf at time  0.8002E-11 and iteration    2400
+Wrote normal ,           0009.sdf at time  0.9002E-11 and iteration    2700
+Wrote full   ,           0010.sdf at time  0.1000E-10 and iteration    3000
+Wrote normal ,           0011.sdf at time  0.1100E-10 and iteration    3300
+Wrote normal ,           0012.sdf at time  0.1200E-10 and iteration    3600
+Wrote normal ,           0013.sdf at time  0.1300E-10 and iteration    3899
+Wrote normal ,           0014.sdf at time  0.1400E-10 and iteration    4199
+Wrote normal ,           0015.sdf at time  0.1500E-10 and iteration    4499
+Wrote normal ,           0016.sdf at time  0.1600E-10 and iteration    4799
+Wrote normal ,           0017.sdf at time  0.1700E-10 and iteration    5099
+Wrote normal ,           0018.sdf at time  0.1800E-10 and iteration    5399
+Wrote normal ,           0019.sdf at time  0.1900E-10 and iteration    5699
+Wrote full   ,           0020.sdf at time  0.2000E-10 and iteration    5999

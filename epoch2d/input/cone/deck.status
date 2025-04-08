@@ -1,0 +1,267 @@
+ EPOCH2D v4.19.5   v4.19.5-6-g3abea98a-dirty 1743664644.207            
+
+Deck state:  1
+
+ Beginning "control" block
+
+ 	Element nx=250 handled OK
+ 	Element ny=250 handled OK
+ 	Element nparticles=nx * ny * 8 handled OK
+ 	Element t_end=50 * femto handled OK
+ 	Element x_min=-10 * micron handled OK
+ 	Element x_max=-x_min handled OK
+ 	Element y_min=x_min handled OK
+ 	Element y_max=x_max handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=simple_laser handled OK
+ 	Element bc_x_max=simple_outflow handled OK
+ 	Element bc_y_min=periodic handled OK
+ 	Element bc_y_max=periodic handled OK
+
+ Ending "boundaries" block
+
+ Beginning "constant" block
+
+ 	Element lambda=1.06 * micron handled OK
+ 	Element omega=2 * pi * c / lambda handled OK
+ 	Element den_cone=4.0 * critical(omega) handled OK
+ 	Element th=1 * micron / 2.0 handled OK
+ 	Element ri=abs(x - 5*micron) - sqrt(2.0) * th handled OK
+ 	Element ro=abs(x - 5*micron) + sqrt(2.0) * th handled OK
+ 	Element xi=3*micron - th handled OK
+ 	Element xo=3*micron + th handled OK
+ 	Element r=sqrt(y^2) handled OK
+
+ Ending "constant" block
+
+ Beginning "species" block
+
+ 	Element name=proton handled OK
+ 	Element charge=1.0 handled OK
+ 	Element mass=1836.2 handled OK
+ 	Element fraction=0.5 handled OK
+ 	Element number_density=if((r gt ri) and (r lt ro), den_cone, 0.0) handled OK
+ 	Element number_density=if((x gt xi) and (x lt xo) and (r lt ri), den_cone, number_density(proton)) handled OK
+ 	Element number_density=if(x gt xo, 0.0, number_density(proton)) handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=electron handled OK
+ 	Element charge=-1.0 handled OK
+ 	Element mass=1.0 handled OK
+ 	Element fraction=0.5 handled OK
+ 	Element number_density=number_density(proton) handled OK
+
+ Ending "species" block
+
+ Beginning "laser" block
+
+ 	Element boundary=x_min handled OK
+ 	Element amp=1e13 handled OK
+ 	Element lambda=lambda handled OK
+ 	Element profile=gauss(r, 0.0, 2.5*micron) handled OK
+
+ Ending "laser" block
+
+ Beginning "output_global" block
+
+ 	Element force_final_to_be_restartable=T handled OK
+
+ Ending "output_global" block
+
+ Beginning "output" block
+
+ 	Element name=normal handled OK
+ 	Element dt_snapshot=1 * femto handled OK
+ 	Element grid=always handled OK
+ 	Element ey=always handled OK
+ 	Element average_particle_energy=always handled OK
+ 	Element number_density=always + species handled OK
+ 	Element temperature=always + species handled OK
+ 	Element distribution_functions=always handled OK
+
+ Ending "output" block
+
+ Beginning "output" block
+
+ 	Element name=large handled OK
+ 	Element dt_snapshot=10 * femto handled OK
+ 	Element particles=always handled OK
+ 	Element particle_weight=always handled OK
+ 	Element charge_density=always handled OK
+
+ Ending "output" block
+
+ Beginning "dist_fn" block
+
+ 	Element name=x_px handled OK
+ 	Element ndims=2 handled OK
+ 	Element direction1=dir_x handled OK
+ 	Element direction2=dir_px handled OK
+ 	Element range1=(1, 1) handled OK
+ 	Element range2=(-3.0e-20, 3.0e-20) handled OK
+ 	Element resolution1=1 handled OK
+ 	Element resolution2=100 handled OK
+ 	Element include_species=electron handled OK
+ 	Element include_species=proton handled OK
+
+ Ending "dist_fn" block
+
+ Beginning "dist_fn" block
+
+ 	Element name=x_px_py handled OK
+ 	Element ndims=3 handled OK
+ 	Element dumpmask=never handled OK
+ 	Element direction1=dir_x handled OK
+ 	Element direction2=dir_px handled OK
+ 	Element direction3=dir_py handled OK
+ 	Element range1=(1, 1) handled OK
+ 	Element range2=(-3.0e-20, 3.0e-20) handled OK
+ 	Element range3=(-3.0e-20, 3.0e-20) handled OK
+ 	Element resolution1=1 handled OK
+ 	Element resolution2=100 handled OK
+ 	Element resolution3=100 handled OK
+ 	Element include_species=electron handled OK
+ 	Element include_species=proton handled OK
+
+ Ending "dist_fn" block
+
+Deck state:  2
+
+ Beginning "control" block
+
+ 	Element nx=250 handled OK
+ 	Element ny=250 handled OK
+ 	Element nparticles=nx * ny * 8 handled OK
+ 	Element t_end=50 * femto handled OK
+ 	Element x_min=-10 * micron handled OK
+ 	Element x_max=-x_min handled OK
+ 	Element y_min=x_min handled OK
+ 	Element y_max=x_max handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=simple_laser handled OK
+ 	Element bc_x_max=simple_outflow handled OK
+ 	Element bc_y_min=periodic handled OK
+ 	Element bc_y_max=periodic handled OK
+
+ Ending "boundaries" block
+
+ Beginning "constant" block
+
+ 	Element lambda=1.06 * micron handled OK
+ 	Element omega=2 * pi * c / lambda handled OK
+ 	Element den_cone=4.0 * critical(omega) handled OK
+ 	Element th=1 * micron / 2.0 handled OK
+ 	Element ri=abs(x - 5*micron) - sqrt(2.0) * th handled OK
+ 	Element ro=abs(x - 5*micron) + sqrt(2.0) * th handled OK
+ 	Element xi=3*micron - th handled OK
+ 	Element xo=3*micron + th handled OK
+ 	Element r=sqrt(y^2) handled OK
+
+ Ending "constant" block
+
+ Beginning "species" block
+
+ 	Element name=proton handled OK
+ 	Element charge=1.0 handled OK
+ 	Element mass=1836.2 handled OK
+ 	Element fraction=0.5 handled OK
+ 	Element number_density=if((r gt ri) and (r lt ro), den_cone, 0.0) handled OK
+ 	Element number_density=if((x gt xi) and (x lt xo) and (r lt ri), den_cone, number_density(proton)) handled OK
+ 	Element number_density=if(x gt xo, 0.0, number_density(proton)) handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=electron handled OK
+ 	Element charge=-1.0 handled OK
+ 	Element mass=1.0 handled OK
+ 	Element fraction=0.5 handled OK
+ 	Element number_density=number_density(proton) handled OK
+
+ Ending "species" block
+
+ Beginning "laser" block
+
+ 	Element boundary=x_min handled OK
+ 	Element amp=1e13 handled OK
+ 	Element lambda=lambda handled OK
+ 	Element profile=gauss(r, 0.0, 2.5*micron) handled OK
+
+ Ending "laser" block
+
+ Beginning "output_global" block
+
+ 	Element force_final_to_be_restartable=T handled OK
+
+ Ending "output_global" block
+
+ Beginning "output" block
+
+ 	Element name=normal handled OK
+ 	Element dt_snapshot=1 * femto handled OK
+ 	Element grid=always handled OK
+ 	Element ey=always handled OK
+ 	Element average_particle_energy=always handled OK
+ 	Element number_density=always + species handled OK
+ 	Element temperature=always + species handled OK
+ 	Element distribution_functions=always handled OK
+
+ Ending "output" block
+
+ Beginning "output" block
+
+ 	Element name=large handled OK
+ 	Element dt_snapshot=10 * femto handled OK
+ 	Element particles=always handled OK
+ 	Element particle_weight=always handled OK
+ 	Element charge_density=always handled OK
+
+ Ending "output" block
+
+ Beginning "dist_fn" block
+
+ 	Element name=x_px handled OK
+ 	Element ndims=2 handled OK
+ 	Element direction1=dir_x handled OK
+ 	Element direction2=dir_px handled OK
+ 	Element range1=(1, 1) handled OK
+ 	Element range2=(-3.0e-20, 3.0e-20) handled OK
+ 	Element resolution1=1 handled OK
+ 	Element resolution2=100 handled OK
+ 	Element include_species=electron handled OK
+ 	Element include_species=proton handled OK
+
+ Ending "dist_fn" block
+
+ Beginning "dist_fn" block
+
+ 	Element name=x_px_py handled OK
+ 	Element ndims=3 handled OK
+ 	Element dumpmask=never handled OK
+ 	Element direction1=dir_x handled OK
+ 	Element direction2=dir_px handled OK
+ 	Element direction3=dir_py handled OK
+ 	Element range1=(1, 1) handled OK
+ 	Element range2=(-3.0e-20, 3.0e-20) handled OK
+ 	Element range3=(-3.0e-20, 3.0e-20) handled OK
+ 	Element resolution1=1 handled OK
+ 	Element resolution2=100 handled OK
+ 	Element resolution3=100 handled OK
+ 	Element include_species=electron handled OK
+ 	Element include_species=proton handled OK
+
+ Ending "dist_fn" block
+
+ Initial conditions complete and valid.
