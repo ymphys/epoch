@@ -1,0 +1,59 @@
+begin:control
+    nx = 400                # 网格点数：定义模拟空间中划分的网格数量
+    nparticles = 2000      # 粒子总数：模拟中包含的粒子总数
+    t_end = 1.5e-1          # 模拟的最终时间：模拟运行的总时间
+    x_min = 0               # 空间域的最小值：定义模拟空间的起点
+    x_max = 5.0e5           # 空间域的最大值：定义模拟空间的终点
+end:control
+
+begin:boundaries
+    bc_x_min = periodic     # 边界条件：x方向最小边界为周期性边界
+    bc_x_max = periodic     # 边界条件：x方向最大边界为周期性边界
+end:boundaries
+
+begin:constant
+    drift_p = 2.5e-24       # 粒子漂移动量：定义粒子在初始状态下的动量
+    temp = 273              # 温度：粒子的温度，单位为开尔文
+    dens = 10               # 粒子数密度：单位体积内的粒子数量
+end:constant
+
+begin:species
+    name = Right            # 粒子种类名称：右向电子
+    charge = -1             # 粒子电荷：单位为基本电荷，值为 -1 表示电子
+    mass = 1.0              # 粒子质量：单位为电子质量
+    fraction = 0.5          # 粒子比例：该种类粒子占总粒子的比例
+    temperature_x = temp    # 粒子温度：沿 x 方向的温度
+    drift_px = drift_p      # 漂移动量：沿正方向的漂移动量
+    number_density = dens   # 粒子数密度：单位体积内的粒子数量
+end:species
+
+begin:species
+    name = Left             # 粒子种类名称：左向电子
+    charge = -1             # 粒子电荷：单位为基本电荷，值为 -1 表示电子
+    mass = 1.0              # 粒子质量：单位为电子质量
+    fraction = 0.5          # 粒子比例：该种类粒子占总粒子的比例
+    temperature_x = temp    # 粒子温度：沿 x 方向的温度
+    drift_px = -drift_p     # 漂移动量：沿负方向的漂移动量
+    number_density = dens   # 粒子数密度：单位体积内的粒子数量
+end:species
+
+begin:output
+    dt_snapshot = 1.5e-3    # 快照时间间隔：每隔多少时间步输出一次快照
+    full_dump_every = 1     # 完整输出间隔：每隔多少个快照进行一次完整输出
+    particles = always      # 粒子属性输出：始终输出粒子的位置和动量
+    px = always             # 粒子动量输出：始终输出粒子的动量
+    grid = always           # 网格属性输出：始终输出网格属性
+    ex = always             # 电场 x 分量：始终输出电场的 x 分量
+    ey = always             # 电场 y 分量：始终输出电场的 y 分量
+    ez = always             # 电场 z 分量：始终输出电场的 z 分量
+    bx = always             # 磁场 x 分量：始终输出磁场的 x 分量
+    by = always             # 磁场 y 分量：始终输出磁场的 y 分量
+    bz = always             # 磁场 z 分量：始终输出磁场的 z 分量
+    jx = always             # 电流密度 x 分量：始终输出电流密度的 x 分量
+    average_particle_energy = always # 平均粒子能量：始终输出粒子的平均能量
+    mass_density = never + species   # 质量密度：不输出总质量密度，但输出按粒子种类区分的质量密度
+    charge_density = always          # 电荷密度：始终输出电荷密度
+    number_density = always + species # 数密度：始终输出总数密度和按粒子种类区分的数密度
+    temperature = always + species   # 温度：始终输出总温度和按粒子种类区分的温度
+    distribution_functions = always  # 分布函数：始终输出粒子的分布函数
+end:output

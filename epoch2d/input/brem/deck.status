@@ -1,0 +1,259 @@
+ EPOCH2D v4.19.5   v4.19.5-6-g3abea98a-dirty 1743664913.623            
+
+Deck state:  1
+
+ Beginning "control" block
+
+ 	Element nx=128 handled OK
+ 	Element ny=8 handled OK
+ 	Element npart=nx * ny * 128 handled OK
+ 	Element nsteps=-1 handled OK
+ 	Element t_end=2.0e-11 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=5.50e-3 handled OK
+ 	Element y_min=-5.0e-6 handled OK
+ 	Element y_max=5.0e-6 handled OK
+ 	Element dt_multiplier=0.8 handled OK
+
+ Ending "control" block
+
+ Beginning "bremsstrahlung" block
+
+ 	Element use_bremsstrahlung=T handled OK
+ 	Element start_time=0 handled OK
+ 	Element produce_photons=T handled OK
+ 	Element photon_energy_min=1 * kev handled OK
+ 	Element photon_weight=1.0 handled OK
+ 	Element photon_dynamics=F handled OK
+ 	Element use_bremsstrahlung_recoil=T handled OK
+ 	Element use_plasma_screening=F handled OK
+
+ Ending "bremsstrahlung" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=simple_laser handled OK
+ 	Element bc_x_max=simple_laser handled OK
+ 	Element bc_y_min=periodic handled OK
+ 	Element bc_y_max=periodic handled OK
+
+ Ending "boundaries" block
+
+ Beginning "species" block
+
+ 	Element name=Electron_Beam handled OK
+ 	Element frac=0.8 handled OK
+ 	Element dump=T handled OK
+ 	Element rho=1.0e5 * nx * ny / ((x_max - x_min)*(y_max - y_min)) handled OK
+ 	Element rho=if (x lt x_max/nx, density(Electron_Beam), 0) handled OK
+ 	Element rho=if (y gt 0, density(Electron_Beam), 0) handled OK
+ 	Element rho=if (y lt 1 * (y_max - y_min) / ny, density(Electron_Beam), 0 ) handled OK
+ 	Element minrho=1 handled OK
+ 	Element temp=0 handled OK
+ 	Element drift_x=5.344e-19 handled OK
+ 	Element identify=electron handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Aluminium handled OK
+ 	Element atomic_number=13 handled OK
+ 	Element mass=49218 handled OK
+ 	Element rho=6.022e28 handled OK
+ 	Element frac=0.2 handled OK
+ 	Element charge=0 handled OK
+ 	Element dump=T handled OK
+ 	Element immobile=T handled OK
+ 	Element temp=0 handled OK
+ 	Element minrho=1 handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Photon handled OK
+ 	Element npart=0 handled OK
+ 	Element dump=T handled OK
+ 	Element identify=brem_photon handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element use_offset_grid=F handled OK
+ 	Element dt_snapshot=1000.0e-15 handled OK
+ 	Element full_dump_every=10 handled OK
+ 	Element restart_dump_every=-1 handled OK
+ 	Element force_final_to_be_restartable=F handled OK
+ 	Element particles=always handled OK
+ 	Element px=always handled OK
+ 	Element py=always handled OK
+ 	Element pz=always handled OK
+ 	Element vx=never handled OK
+ 	Element vy=never handled OK
+ 	Element vz=never handled OK
+ 	Element charge=never handled OK
+ 	Element mass=never handled OK
+ 	Element particle_weight=always handled OK
+ 	Element species_id=never handled OK
+ 	Element grid=always handled OK
+ 	Element ex=never handled OK
+ 	Element ey=never handled OK
+ 	Element ez=never handled OK
+ 	Element bx=never handled OK
+ 	Element by=never handled OK
+ 	Element bz=never handled OK
+ 	Element jx=never handled OK
+ 	Element jy=never handled OK
+ 	Element jz=never handled OK
+ 	Element ekbar=always + species handled OK
+ 	Element mass_density=never + species handled OK
+ 	Element charge_density=never handled OK
+ 	Element number_density=always + species handled OK
+ 	Element temperature=never + species handled OK
+ 	Element particle_probes=always handled OK
+
+ Ending "output" block
+
+ Beginning "probe" block
+
+ 	Element name=electron_probe handled OK
+ 	Element point=(5.0e-3, 0.0) handled OK
+ 	Element normal=(1.0, 0.0) handled OK
+ 	Element ek_min=0.0 handled OK
+ 	Element ek_max=-1.0 handled OK
+ 	Element include_species=Electron_Beam handled OK
+ 	Element dumpmask=always handled OK
+
+ Ending "probe" block
+
+Deck state:  2
+
+ Beginning "control" block
+
+ 	Element nx=128 handled OK
+ 	Element ny=8 handled OK
+ 	Element npart=nx * ny * 128 handled OK
+ 	Element nsteps=-1 handled OK
+ 	Element t_end=2.0e-11 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=5.50e-3 handled OK
+ 	Element y_min=-5.0e-6 handled OK
+ 	Element y_max=5.0e-6 handled OK
+ 	Element dt_multiplier=0.8 handled OK
+
+ Ending "control" block
+
+ Beginning "bremsstrahlung" block
+
+ 	Element use_bremsstrahlung=T handled OK
+ 	Element start_time=0 handled OK
+ 	Element produce_photons=T handled OK
+ 	Element photon_energy_min=1 * kev handled OK
+ 	Element photon_weight=1.0 handled OK
+ 	Element photon_dynamics=F handled OK
+ 	Element use_bremsstrahlung_recoil=T handled OK
+ 	Element use_plasma_screening=F handled OK
+
+ Ending "bremsstrahlung" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=simple_laser handled OK
+ 	Element bc_x_max=simple_laser handled OK
+ 	Element bc_y_min=periodic handled OK
+ 	Element bc_y_max=periodic handled OK
+
+ Ending "boundaries" block
+
+ Beginning "species" block
+
+ 	Element name=Electron_Beam handled OK
+ 	Element frac=0.8 handled OK
+ 	Element dump=T handled OK
+ 	Element rho=1.0e5 * nx * ny / ((x_max - x_min)*(y_max - y_min)) handled OK
+ 	Element rho=if (x lt x_max/nx, density(Electron_Beam), 0) handled OK
+ 	Element rho=if (y gt 0, density(Electron_Beam), 0) handled OK
+ 	Element rho=if (y lt 1 * (y_max - y_min) / ny, density(Electron_Beam), 0 ) handled OK
+ 	Element minrho=1 handled OK
+ 	Element temp=0 handled OK
+ 	Element drift_x=5.344e-19 handled OK
+ 	Element identify=electron handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Aluminium handled OK
+ 	Element atomic_number=13 handled OK
+ 	Element mass=49218 handled OK
+ 	Element rho=6.022e28 handled OK
+ 	Element frac=0.2 handled OK
+ 	Element charge=0 handled OK
+ 	Element dump=T handled OK
+ 	Element immobile=T handled OK
+ 	Element temp=0 handled OK
+ 	Element minrho=1 handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Photon handled OK
+ 	Element npart=0 handled OK
+ 	Element dump=T handled OK
+ 	Element identify=brem_photon handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element use_offset_grid=F handled OK
+ 	Element dt_snapshot=1000.0e-15 handled OK
+ 	Element full_dump_every=10 handled OK
+ 	Element restart_dump_every=-1 handled OK
+ 	Element force_final_to_be_restartable=F handled OK
+ 	Element particles=always handled OK
+ 	Element px=always handled OK
+ 	Element py=always handled OK
+ 	Element pz=always handled OK
+ 	Element vx=never handled OK
+ 	Element vy=never handled OK
+ 	Element vz=never handled OK
+ 	Element charge=never handled OK
+ 	Element mass=never handled OK
+ 	Element particle_weight=always handled OK
+ 	Element species_id=never handled OK
+ 	Element grid=always handled OK
+ 	Element ex=never handled OK
+ 	Element ey=never handled OK
+ 	Element ez=never handled OK
+ 	Element bx=never handled OK
+ 	Element by=never handled OK
+ 	Element bz=never handled OK
+ 	Element jx=never handled OK
+ 	Element jy=never handled OK
+ 	Element jz=never handled OK
+ 	Element ekbar=always + species handled OK
+ 	Element mass_density=never + species handled OK
+ 	Element charge_density=never handled OK
+ 	Element number_density=always + species handled OK
+ 	Element temperature=never + species handled OK
+ 	Element particle_probes=always handled OK
+
+ Ending "output" block
+
+ Beginning "probe" block
+
+ 	Element name=electron_probe handled OK
+ 	Element point=(5.0e-3, 0.0) handled OK
+ 	Element normal=(1.0, 0.0) handled OK
+ 	Element ek_min=0.0 handled OK
+ 	Element ek_max=-1.0 handled OK
+ 	Element include_species=Electron_Beam handled OK
+ 	Element dumpmask=always handled OK
+
+ Ending "probe" block
+
+ Initial conditions complete and valid.
