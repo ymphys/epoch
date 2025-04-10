@@ -1,10 +1,18 @@
 begin:control
   nx = 4000
   ny = 500
+<<<<<<< HEAD
+=======
+  x_min = 0.0
+  x_max = 0.2
+  y_min = -0.025
+  y_max = 0.025
+>>>>>>> epoch/main
   t_end = 2.0e-8     # 模拟20ns
 end:control
 
 begin:boundaries
+<<<<<<< HEAD
   x_min = 0.0
   x_max = 0.2
   y_min = -0.025
@@ -13,13 +21,19 @@ begin:boundaries
   x_max_bc = open
   y_min_bc = open
   y_max_bc = open
+=======
+  x_min = open
+  x_max = open
+  y_min = open
+  y_max = open
+>>>>>>> epoch/main
 end:boundaries
 
 begin:species
   name = Al
   charge = 13
   mass = 27
-  density = if(x > 0.05 && x < 0.15, 2.7e3, 0.0)  # 中心区域为铝靶，单位kg/m³
+  density = 2.7e3  # 暂时写成常数
   temperature = 10
   nparticles = 1000
 end:species
