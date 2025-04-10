@@ -1,4 +1,4 @@
- EPOCH2D v4.19.5   v4.19.5-6-g3abea98a-dirty 1744207799.716            
+ EPOCH2D v4.19.5   v4.19.5-6-g3abea98a-dirty 1744246442.843            
 
 Deck state:  1
 
@@ -6,75 +6,23 @@ Deck state:  1
 
  	Element nx=4000 handled OK
  	Element ny=500 handled OK
- 	Element x_min=0.0 handled OK
- 	Element x_max=0.2 handled OK
- 	Element y_min=-0.025 handled OK
- 	Element y_max=0.025 handled OK
  	Element t_end=2.0e-8 handled OK
 
  Ending "control" block
 
- Beginning "boundaries" block
-
 
  *** WARNING ***
- Input deck line number 13
- Unrecognised element "x_min" in input deck.
- Code will continue to run, but behaviour is undefined
+ Input deck line number 7
+ Unknown block "grid" in input deck, ignoring           1
+ Beginning "grid" block
 
 
- *** WARNING ***
- Input deck line number 14
- Unrecognised element "x_max" in input deck.
- Code will continue to run, but behaviour is undefined
+ *** ERROR ***
+ Input deck line number 8
+ Value "0.0" in element "x_min" is invalid and cannot be parsed.
+ Code will terminate
 
 
- *** WARNING ***
- Input deck line number 15
- Unrecognised element "y_min" in input deck.
- Code will continue to run, but behaviour is undefined
-
-
- *** WARNING ***
- Input deck line number 16
- Unrecognised element "y_max" in input deck.
- Code will continue to run, but behaviour is undefined
-
-
- Ending "boundaries" block
-
- *** WARNING ***
- Input deck line number 17
- Block "boundaries" contains errors
-
- Beginning "species" block
-
- 	Element name=Al handled OK
- 	Element charge=13 handled OK
- 	Element mass=27 handled OK
- 	Element density=if(x > 0.05 && x < 0.15, 2.7e3, 0.0) handled OK
- 	Element temperature=10 handled OK
- 	Element nparticles=1000 handled OK
-
- Ending "species" block
-
- Beginning "laser" block
-
- 	Element direction=+x handled OK
- 	Element profile=gaussian handled OK
- 	Element wavelength=5.32e-7 handled OK
- 	Element intensity=1.91e10 handled OK
- 	Element time_envelope=flat handled OK
- 	Element full_duration=1.0e-8 handled OK
- 	Element fwhm=0.01 handled OK
- 	Element offset=0.05 handled OK
-
- Ending "laser" block
-
- Beginning "output" block
-
- 	Element dt_snapshot=1e-10 handled OK
- 	Element format=sdf handled OK
-
- Ending "output" block
-
+ *** ERROR ***
+ The code cannot parse the input deck sufficiently to run.
+ Please read this file and correct any errors mentioned.

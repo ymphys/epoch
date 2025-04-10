@@ -2,14 +2,13 @@ begin:control
   nx = 4000
   ny = 500
   x_min = 0.0
-  x_max = 0.2        # 20 cm
+  x_max = 0.2
   y_min = -0.025
-  y_max = 0.025      # 5 cm
-  t_end = 2.0e-8     # 模拟20ns，含脉冲前后过程
+  y_max = 0.025
+  t_end = 2.0e-8     # 模拟20ns
 end:control
 
 begin:boundaries
-  # 真空边界
   x_min = open
   x_max = open
   y_min = open
@@ -20,7 +19,7 @@ begin:species
   name = Al
   charge = 13
   mass = 27
-  density = if(x > 0.05 && x < 0.15, 2.7e3, 0.0)  # 中心区域为铝靶，单位kg/m³
+  density = 2.7e3  # 暂时写成常数
   temperature = 10
   nparticles = 1000
 end:species
